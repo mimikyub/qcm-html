@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau avec checkboxes</title>
+    <style>
+        .red-checkbox {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tableau avec checkboxes</h1>
+
+    <form id="tableForm">
+        <label for="rowCount">Nombre de lignes :</label>
+        <input type="number" id="rowCount" min="1" required>
+        
+        <!-- Champ texte pour les nombres -->
+
+        <button type="submit">Générer</button>
+        <button type="button" onclick="removeLastTable()">Effacer</button>
+    </form>
+
+    <div id="tableContainer">
+        <!-- Tableau généré dynamiquement -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
